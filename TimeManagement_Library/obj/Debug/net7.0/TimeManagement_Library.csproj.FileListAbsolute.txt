@@ -1,0 +1,12 @@
+C:\Users\unakho\source\repos\TimeManagement_Library\bin\Debug\net7.0\TimeManagement_Library.deps.json
+C:\Users\unakho\source\repos\TimeManagement_Library\bin\Debug\net7.0\TimeManagement_Library.dll
+C:\Users\unakho\source\repos\TimeManagement_Library\bin\Debug\net7.0\TimeManagement_Library.pdb
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\TimeManagement_Library.csproj.AssemblyReference.cache
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\TimeManagement_Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\TimeManagement_Library.AssemblyInfoInputs.cache
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\TimeManagement_Library.AssemblyInfo.cs
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\TimeManagement_Library.csproj.CoreCompileInputs.cache
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\TimeManagement_Library.dll
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\refint\TimeManagement_Library.dll
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\TimeManagement_Library.pdb
+C:\Users\unakho\source\repos\TimeManagement_Library\obj\Debug\net7.0\ref\TimeManagement_Library.dll
