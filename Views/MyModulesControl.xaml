@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="WPF_TIME_MANAGEMENT.Views.MyModulesControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_TIME_MANAGEMENT.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="600"   
+             xmlns:self_study ="clr-namespace:WPF_TIME_MANAGEMENT.Views"
+             
+             >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="82*"/>
+        </Grid.RowDefinitions>
+
+
+        <DataGrid ItemsSource="{Binding Path= SemesterModules}" 
+                  
+                  Grid.Row="0" AutoGenerateColumns="False" Margin="22,54,119,90" Grid.RowSpan="2">
+            <!--Colums of Objects in Collection-->
+            <DataGrid.Columns >
+                <!--Name-->
+                <DataGridTextColumn Header="Name" Binding="{Binding Path= Name}"/>
+
+                <!--Code-->
+
+                <DataGridTextColumn Header="Code"  Binding="{Binding Path= Code}"/>
+
+                <!--Number of Credits-->
+                <DataGridTextColumn Header="Number of Credits"  Binding="{Binding Path= Number_of_Credits}"/>
+
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+        <self_study:SelfStudyControl Grid.Row="1" Grid.RowSpan="2" Margin="22,49,119,104" Loaded="SelfStudyControl_Loaded" />
+        <Label Content="My Semester Modules" HorizontalAlignment="Left" Margin="22,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.222,0.563" FontWeight="Bold"/>
+
+    </Grid>
+</UserControl>

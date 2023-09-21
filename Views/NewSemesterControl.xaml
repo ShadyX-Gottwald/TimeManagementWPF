@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="WPF_TIME_MANAGEMENT.Views.NewSemesterControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_TIME_MANAGEMENT.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid Margin="0,0,0,128">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="New Semester" Height="28" 
+                   HorizontalAlignment="Center" 
+                   FontStyle="Italic"  
+                   FontWeight="Bold"   
+                   FontSize="12"   
+                   Grid.Row="0"
+                   />
+
+
+        <StackPanel Orientation="Vertical" Margin="10,31,26,125" Grid.RowSpan="2">
+
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Number of Weeks"    
+                       FontSize="9"   
+                       FontWeight="Medium"     
+                        Width="154" 
+                       Padding="10,8"    
+                       Margin="10,0,8,0"
+                          />
+                <TextBox x:Name="txtNumWeeks" Text=""    
+                       FontSize="8"   
+                       FontWeight="Medium"   
+                       Height="26" Width="147"
+                       />
+
+            </StackPanel>
+
+
+
+
+            <!---Start Date Calender <Calendar x:Name="clder" Height="200" Width="190" />
+-->
+
+            <StackPanel Orientation="Horizontal" Height="26" Width="750" >
+                <Label  Content="Start Date(mm/dd/yyyy" Height="27" Width="160" 
+                       Padding="10,8" 
+                        FontSize="9"   />
+                <TextBox x:Name="txtStartDate" Text=""    
+                       FontSize="8"   
+                       FontWeight="Medium"   
+                       Height="26" Width="140"   
+                         Margin="10,0,8,0"
+                       />
+
+            </StackPanel>
+            <Button x:Name="SaveSemesterBtn" Content="Save Semester" Height="20" Width="222" Click="Button_Click" Margin="8" HorizontalAlignment="Left"/>
+
+        </StackPanel>
+        <Grid Grid.Row="1" Margin="10,80,0,-49">
+            <Label Content="Module Code" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="102"/>
+            <TextBox x:Name="txtCode" HorizontalAlignment="Left" Margin="157,8,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Module name&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="157,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Num_Credits" HorizontalAlignment="Left" Margin="14,73,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtCredits" HorizontalAlignment="Left" Margin="157,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Week Class hours&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtHours" HorizontalAlignment="Left" Margin="157,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Save Module" HorizontalAlignment="Left" Margin="14,146,0,0" VerticalAlignment="Top" Height="23" Width="263" Click="SaveModuleBtn"/>
+        </Grid>
+
+
+    </Grid>
+
+</UserControl>

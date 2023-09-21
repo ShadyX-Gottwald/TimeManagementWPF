@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_TIME_MANAGEMENT", "WPF_TIME_MANAGEMENT.csproj", "{7A74B553-81AF-4D2E-A51B-9B559D59C5AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A74B553-81AF-4D2E-A51B-9B559D59C5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A74B553-81AF-4D2E-A51B-9B559D59C5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A74B553-81AF-4D2E-A51B-9B559D59C5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A74B553-81AF-4D2E-A51B-9B559D59C5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D237A00-763D-4F45-BA81-F9929E5DF56D}
+	EndGlobalSection
+EndGlobal

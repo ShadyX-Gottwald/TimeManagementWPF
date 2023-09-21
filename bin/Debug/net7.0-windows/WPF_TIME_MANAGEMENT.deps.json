@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "WPF_TIME_MANAGEMENT/1.0.0": {
+        "dependencies": {
+          "TimeManagement_Library": "1.0.0"
+        },
+        "runtime": {
+          "WPF_TIME_MANAGEMENT.dll": {}
+        }
+      },
+      "TimeManagement_Library/1.0.0": {
+        "runtime": {
+          "TimeManagement_Library.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF_TIME_MANAGEMENT/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TimeManagement_Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

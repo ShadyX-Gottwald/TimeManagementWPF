@@ -1,0 +1,66 @@
+﻿<Window x:Class="WPF_TIME_MANAGEMENT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_TIME_MANAGEMENT"
+        mc:Ignorable="d"   
+        Title="MainWindow" Height="450" Width="800" 
+        xmlns:nav="clr-namespace:WPF_TIME_MANAGEMENT.Views" 
+        >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <!--Nav Buttons-->
+        <StackPanel Grid.Column="0">
+
+            <Grid x:Name="MenuNav1" Background="#FF10A8AB" Margin="1,2,8,-2" Height="450">
+
+                <!--New Semester Nav Button-->
+                <Button x:Name="New" Content="New" HorizontalAlignment="Left"
+                Margin="-1,50,0,0"
+                VerticalAlignment="Top"  Height="69" Width="291" 
+                Background="#FF10A8AB" FontFamily="Arial Black" 
+                FontWeight="Bold"  
+                Opacity="0.7" Click="NewButton"
+                
+                />
+
+                <Button x:Name="Home" Content="Home" HorizontalAlignment="Center" 
+                Margin="0,125,0,0" VerticalAlignment="Top" Height="69" Width="291" 
+                Background="#FF10A8AB" FontFamily="Arial Black" 
+                FontWeight="Bold"  
+                Opacity="0.7" Click="HomeBtn"
+                
+                />
+
+
+                <Button x:Name="Record" Content="Record" HorizontalAlignment="Left"
+                Margin="-2,203,0,0" VerticalAlignment="Top"  
+                Height="69" Width="291" 
+                Background="#FF10A8AB" FontFamily="Arial Black" 
+                FontWeight="Bold" Opacity="0.7" Click="RecordDataBtn"
+                
+                />
+                <Button x:Name="Reset" Content="Calender" HorizontalAlignment="Left" Margin="-15,293,0,0" 
+                        VerticalAlignment="Top" 
+                         Height="69" Width="291" 
+                Background="#FF10A8AB" FontFamily="Arial Black" 
+                FontWeight="Bold" Opacity="0.7" Click="ResetBtn"/>
+            </Grid> 
+            
+        </StackPanel>
+
+
+        <!--Frame Changing Dependent on page-->
+        <Frame x:Name="Main_Frame"  NavigationUIVisibility="Hidden"     
+               Grid.Column="1" >
+        </Frame>
+    </Grid>
+
+</Window>
